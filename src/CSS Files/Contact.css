@@ -1,0 +1,43 @@
+.contact-wrap {
+  max-width: 1500px;
+  margin: 7rem auto;
+}
+
+.content {
+  text-align: center;
+  color: var(--textcolor);
+  padding: 100px;
+}
+.content h1 {
+  font-size: 5rem;
+}
+.content p {
+  font-size: 1.5rem;
+}
+.email {
+  font-size: 2rem;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  transition: ease-in-out 0.2s;
+}
+.email:hover {
+  color: var(--nice-color); /* Change color on hover */
+}
+.linked-in {
+  text-decoration: none;
+  color: var(--nice-color);
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .email {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,238 @@
+.icons {
+  margin-right: 20px;
+  color: var(--textcolor);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.9rem;
+  top: 1vw;
+  right: 3vw;
+}
+.icons:hover {
+  color: var(--nice-color);
+}
+.container {
+  -webkit-backdrop-filter: (blur(12px));
+  max-width: 300px;
+  display: inline-flex;
+  padding: 4px 12px;
+
+  position: relative;
+  left: 87vw;
+  margin-top: 12px;
+  border: 2px solid var(--nice-color);
+}
+
+.Resume {
+  width: 120px;
+  height: 35px;
+  border: none;
+  outline: none;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--nice-color);
+  z-index: 1;
+  background-color: var(--nav-dark);
+  font-weight: 400;
+}
+
+.Resume:hover {
+  color: #fff;
+}
+.Resume::before {
+  transition: 0.5 all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--nice-color);
+}
+.Resume:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+ul {
+  height: 100vh;
+  width: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--nav-color);
+  list-style: none;
+  transition: transform 0.3s ease;
+  justify-content: space-around;
+}
+
+ul li {
+  padding: 10px;
+  margin-bottom: 30px;
+  writing-mode: vertical-lr;
+  font-size: 1.8rem;
+  color: var(--textcolor);
+}
+ul li:hover {
+  cursor: pointer;
+}
+
+ul a {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  color: var(--textcolor);
+  transition: color 0.3s ease;
+}
+
+ul a:before,
+ul a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: var(--nice-color);
+  z-index: -5;
+  border-radius: 10px;
+}
+
+ul a:before {
+  top: -0.1rem;
+  bottom: 100%;
+  left: -0.1rem;
+  right: calc(100% + 0.1rem);
+  transition: left 0.5s, right 0.5s, bottom 0.5s;
+}
+
+ul a:after {
+  top: 100%;
+  bottom: -0.1rem;
+  left: calc(100% + 0.1rem);
+  right: -0.1rem;
+  transition: left 0.5s, right 0.5s, top 0.5s;
+}
+
+ul a:hover:before {
+  top: -0.1rem;
+  bottom: 0;
+  left: -0.1rem;
+  right: 0;
+}
+
+ul a:hover:after {
+  top: 0;
+  bottom: -0.1rem;
+  left: 0;
+  right: -0.1rem;
+}
+
+.Name {
+  writing-mode: horizontal-tb !important;
+  padding: 17 px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.period {
+  color: var(--nice-color);
+}
+.name-box {
+  background-color: var(--background-dark);
+  height: 50px;
+  padding: 0;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23vh;
+
+  color: var(--textcolor);
+}
+.Introduction h1 {
+  font-size: 5rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.Introduction h2 span {
+  color: var(--nice-color);
+}
+.Introduction p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.Introduction button {
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: 1.3rem;
+  background-color: var(--nice-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5 ease;
+}
+.Introduction button:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+  .container,
+  .Resume {
+    position: fixed;
+    border: none !important;
+    z-index: 600 !important;
+  }
+
+  .Resume {
+    font-size: 1.4em;
+    position: relative;
+
+    right: 22vw;
+    border-radius: 5px;
+    border: 2px solid var(--nice-color) !important;
+  }
+
+  .Introduction {
+    text-align: center;
+    margin-top: 23vh;
+    margin-left: 8vh;
+  }
+
+  .Introduction h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+
+  .Introduction h2 {
+    font-size: 1.4em;
+  }
+
+  .Introduction p {
+    width: 100%;
+    font-size: 1rem;
+    margin: 1em 0;
+  }
+
+  .Introduction button {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
