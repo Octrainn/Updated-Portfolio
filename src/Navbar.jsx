@@ -55,9 +55,11 @@ function Navbar() {
 
       <ul className="nav-links">
         <div className="name-box">
+         
           <li className="Name">
             A <span className="period">.</span>
           </li>
+                
         </div>
         <Link to="About" smooth={true} duration={500}>
           <li>About</li>

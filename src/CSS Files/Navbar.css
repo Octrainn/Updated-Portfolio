@@ -192,6 +192,9 @@ ul a:hover:after {
   color: #fff;
 }
 
+.nav-links .Name {
+  cursor: default !important;
+}
 @media screen and (max-width: 769px) {
   .container,
   .Resume {
