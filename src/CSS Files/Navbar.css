@@ -12,7 +12,6 @@
   color: var(--nice-color);
 }
 .container {
-  -webkit-backdrop-filter: (blur(12px));
   max-width: 300px;
   display: inline-flex;
   padding: 4px 12px;

@@ -6,6 +6,8 @@ import fault from './Images/FaultFinder.png';
 import calendar from './Images/Calendar.png';
 import tensor from './Images/TensorFlow.jpg';
 import discord from './Images/DiscordBot.png';
+import picture from './Images/Better.jpg';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -43,7 +45,7 @@ function Projects() {
           imageSrc={medical}
           githubLink="https://github.com/ChrisMikhail/hpsa-website"
           technologies="HTML CSS JavaScript JQuery"
-          description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms."
+          description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms. Website url/link is posted in the READ ME."
         />
 
         <ProjectCard
@@ -76,6 +78,13 @@ function Projects() {
           githubLink="https://github.com/Octrainn/TensorFlowModel"
           technologies="Python, Juypter Notebook, Google Colab"
           description="Mini-project that focuses on implementing a machine learning model to accurately differentiate between images of humans and animals, specifically distinguishing between dogs and cats. Additionally, the project leverages the computational capabilities of Google Colab to efficiently train the model and handle the image datasets effectively."
+        />
+        <ProjectCard
+          title="Static Portfolio "
+          imageSrc={picture}
+          githubLink="https://github.com/Octrainn/octrainn.github.io"
+          technologies="HTML, CSS, JavaScript, JQuery, Bootstrap CSS"
+          description="Experience my previous static portfolio designed to elegantly display my abilities and projects. Its responsive and dynamic layout ensures seamless viewing across various devices, including laptops, mobiles, and PCs. Website url/link is posted in the READ ME."
         />
       </div>
     </div>
