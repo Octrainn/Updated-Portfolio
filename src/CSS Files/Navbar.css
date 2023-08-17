@@ -67,13 +67,17 @@ ul {
   background-color: var(--nav-color);
   list-style: none;
   transition: transform 0.3s ease;
-  justify-content: space-around;
+
+  display: flex;
+  flex-direction: column;
 }
 
 ul li {
   padding: 10px;
   margin-bottom: 30px;
   writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+
   font-size: 1.8rem;
   color: var(--textcolor);
 }
