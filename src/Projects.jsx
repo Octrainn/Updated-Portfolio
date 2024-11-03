@@ -46,7 +46,7 @@ function Projects() {
           imageSrc={SpaceSim}
           githubLink="https://www.roblox.com/games/15775582193/UPD-4-Space-Simulator-X"
           technologies="LUA, Roblox Game Engine, ProfileService API, TopBarPlus API"
-          description="Developed a fully functional game in Roblox, utilinz multiple tech stacks and APIs. Game is publically available, click the icon above."
+          description="Developed a fully functional game in Roblox, utilizing multiple tech stacks and APIs. Game is publically available, click the icon above."
           />
 
         <ProjectCard
