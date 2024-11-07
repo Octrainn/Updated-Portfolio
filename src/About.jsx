@@ -7,36 +7,47 @@ function About() {
   const languages = [
     'JavaScript',
     'TypeScript',
+    'C',
     'HTML/CSS',
-    'React',
-    'NodeJS',
-    'MongoDB',
-    'Github/Git',
-    'AWS',
-    'Tailwind',
-    'Bootstrap CSS',
     'Python',
     'Java',
-    'JQuery',
     'SQL',
-    'Django',
-    'Angular',
+    'Lua',
+    'NoSQL',
+    
+  
   ];
 
-  const learning = [
-    'Svelte',
-    'Android / IOS Development',
-    'Machine Learning',
-    'ThreeJS',
-    'Tensor Flow',
-    'Framer Motion',
-    'Motion One',
-  ];
+  const techStacks = [
+    "MySQL",
+    "Oracle",
+    "MongoDB",
+    "ReactJS",
+    "Django",
+    "Express JS",
+    'NodeJS',
+    'Git/Github',
+    'Postgres',
+    'AWS',
+
+
+
+
+    
+
+
+  ]
+
+  const Paradigms = [
+    "Object Oriented Programming (OOP)",
+    "Functional Programming",
+    "DSA",
+  ]
 
   return (
     <section className='about-section' id='About'>
       <h1 className='about-title'>
-        About<span style={{ color: '#FF004F' }}>.</span>
+        Skills<span style={{ color: '#FF004F' }}>.</span>
       </h1>
       <div className='section-divider'></div>
       <div className='content-wrapper'>
@@ -46,18 +57,18 @@ function About() {
           </p>
           <br />
           <p>
-            Currently, I am actively seeking full-stack opportunities that encompass both front-end and back-end development. If you're interested, I'd be thrilled to connect and discuss potential collaborations. I am currently working on several projects that emphasize specific tech stacks and frameworks, allowing me to further enhance my expertise.
+          Currently, I am actively seeking full-stack opportunities that encompass both front-end and back-end development. If you're interested, I'd be thrilled to connect and discuss potential collaborations. 
           </p>
+          <br></br>
+          <p>as for my hobbies, i enjoy creating video games, playing video games, watching shows and wokring out! </p>
           <br />
-          <p>In my personal life, I enjoy collecting various figures, spending time watching shows, and creating UI/UX designs, and working out. </p>
-          <br />
-          <p>Feel free to reach out if you would like to explore the potential of working together!</p>
+          <p>feel free to reach out if you would like to explore the potential of working together!</p>
         </div>
         <div className='right-section'>
           <div className='tools'>
             <h1>
               <FontAwesomeIcon icon={faFaceSmileWink} style={{ color: '#ff005a' }} />{' '}
-              Languages/Frameworks
+              Programming Languages
             </h1>
             {languages.map((language, index) => (
               <span key={index}>{language}</span>
@@ -65,11 +76,20 @@ function About() {
             <br />
             <h1>
               <FontAwesomeIcon icon={faFaceSmileBeam} style={{ color: '#ff005a' }}  /> {' '} 
-               Learning
+             Techstacks
             </h1>
-            {learning.map((item, index) => (
+            {techStacks.map((item, index) => (
               <span key={index}>{item}</span>
             ))}
+
+<h1>
+              <FontAwesomeIcon icon={faFaceSmileBeam} style={{ color: '#ff005a' }}  /> {' '} 
+             Programming Paradigms
+            </h1>
+            {Paradigms.map((item, index) => (
+              <span key={index}>{item}</span>
+            ))}
+
           </div>
         </div>
       </div>

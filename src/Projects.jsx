@@ -42,29 +42,31 @@ function Projects() {
       </h1>
       <div className='projects-wrapper'>
       <ProjectCard
-          title="Space Simualtor X"
-          imageSrc={SpaceSim}
-          githubLink="https://www.roblox.com/games/15775582193/UPD-4-Space-Simulator-X"
-          technologies="LUA, Roblox Game Engine, ProfileService API, TopBarPlus API"
-          description="Developed a fully functional game in Roblox, utilizing multiple tech stacks and APIs. Game is publically available, click the icon above."
-          />
+  className="project-card"
+  title="Space Simulator X"
+  imageSrc={SpaceSim}
+  githubLink="https://www.roblox.com/games/15775582193/UPD-4-Space-Simulator-X"
+  technologies="LUA, Roblox Game Engine, ProfileService API, TopBarPlus API"
+  description="Developed a fully functional game in Roblox, utilizing multiple tech stacks and APIs. Game is publicly available, click the icon above."
+/>
 
-        <ProjectCard
-          title="Hackathon Fault Finder"
-          imageSrc={fault}
-          githubLink="https://github.com/HNow/MetHacks2023Base"
-          technologies="NodeJS, Astro/React, HTML/CSS, JS/JSX, Python, OpenAI API, Figma"
-          description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions. It utilizes a backend database in Node.js to present users with these questions and solutions, allowing them to review and debug the provided code. The system then provides feedback on the accuracy of the debugging process."
-        />
+<ProjectCard
+  className="project-card"
+  title="Hackathon Fault Finder"
+  imageSrc={fault}
+  githubLink="https://github.com/HNow/MetHacks2023Base"
+  technologies="NodeJS, Astro/React, HTML/CSS, JS/JSX, Python, OpenAI API, Figma"
+  description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions. It utilizes a backend database in Node.js to present users with these questions and solutions, allowing them to review and debug the provided code. The system then provides feedback on the accuracy of the debugging process."
+/>
 
-  <ProjectCard
-          title="Health Policy Student Association"
-          imageSrc={medical}
-          githubLink="https://github.com/ChrisMikhail/hpsa-website"
-          technologies="HTML CSS JavaScript JQuery"
-          description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms. Website url/link is posted in the READ ME."
-        />
-
+<ProjectCard
+  className="project-card"
+  title="Health Policy Student Association"
+  imageSrc={medical}
+  githubLink="https://github.com/ChrisMikhail/hpsa-website"
+  technologies="HTML CSS JavaScript JQuery"
+  description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms. Website URL/link is posted in the README."
+/>
 
       </div>
     </div>

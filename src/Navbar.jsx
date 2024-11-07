@@ -62,7 +62,7 @@ function Navbar() {
                 
         </div>
         <Link to="About" smooth={true} duration={500}>
-          <li>About</li>
+          <li>Skills</li>
         </Link>
         <Link to="Projects" smooth={true} duration={500}>
           <li>Projects</li>

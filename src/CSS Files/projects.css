@@ -2,26 +2,28 @@
   font-size: 5rem;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
 
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 2rem;
-  margin: 13rem;
-  gap: 15rem;
+  margin: 15vw;
+  gap: 10rem;
   margin-bottom: 2rem;
+
 }
 
 .project {
   position: relative;
   color: white;
-  width: 500px;
-  height: 250px;
-  border-radius: 10px;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
   background-color: var(--background-dark);
 }
+
+
 
 .project-info {
   position: relative;
@@ -45,7 +47,7 @@
   overflow: hidden;
 }
 .images:hover {
-  transform: scale(0.9); /* Adjust the scale value as desired */
+  transform: scale(0.9); 
 }
 .project-info a {
   color: white;
@@ -56,6 +58,8 @@
 .project-info a:hover {
   color: var(--nice-color);
 }
+
+
 
 @media (max-width: 1150px) {
   .title {

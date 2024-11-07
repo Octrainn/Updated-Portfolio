@@ -25,10 +25,16 @@
   width: 100vw;
   z-index: -2;
 }
-.about-text {
-  font-size: 1.3rem;
-  margin: 10px;
+
+.about-text p {
+ font-size: 1.6rem;
 }
+
+.right-section .tools span {
+  margin: 0.3rem;
+font-size: 1.5rem;
+}
+
 .tools span {
   display: inline-flex;
   background-color: var(--background-dark);
