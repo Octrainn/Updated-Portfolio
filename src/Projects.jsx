@@ -8,6 +8,7 @@ import tensor from './Images/TensorFlow.jpg';
 import discord from './Images/DiscordBot.png';
 import picture from './Images/Better.jpg';
 import SpaceSim from './Images/SpaceSim.png';
+import Ruby from './Images/Ruby.png'
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -52,12 +53,25 @@ function Projects() {
 
 <ProjectCard
   className="project-card"
+  title="Bug Report Rails"
+  imageSrc={Ruby}
+  githubLink="https://github.com/EliyaFarhat/BugReportRails"
+  technologies="Ruby, Docker, Javscript, Ruby on Rails, PostgreSQL"
+  description="Full-stack web application responsible for tracking bug reports. Includes graphical representations of past sprint data to help visualize data effectively. Implemented user registration and login with a PostgreSQL database for secure data storage "
+/>
+
+
+
+<ProjectCard
+  className="project-card"
   title="Hackathon Fault Finder"
   imageSrc={fault}
   githubLink="https://github.com/HNow/MetHacks2023Base"
   technologies="NodeJS, Astro/React, HTML/CSS, JS/JSX, Python, OpenAI API, Figma"
-  description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions. It utilizes a backend database in Node.js to present users with these questions and solutions, allowing them to review and debug the provided code. The system then provides feedback on the accuracy of the debugging process."
+  description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions process."
 />
+
+
 
 <ProjectCard
   className="project-card"
