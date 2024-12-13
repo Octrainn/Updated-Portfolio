@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-scroll";
-import "./CSS Files/Navbar.css";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect/dist/core";
-import { animateScroll as scroll } from "react-scroll";
+import "./CSS Files/Navbar.css";
 import Pdf from "./Images/Akshay_Vakil_Computer_Science_Resume (1).pdf";
 
 function Navbar() {
@@ -32,8 +32,6 @@ function Navbar() {
     };
   }, []);
 
- 
-
   const onResumeClick = () => {
     window.open(Pdf);
   };
@@ -41,7 +39,7 @@ function Navbar() {
   return (
     <nav id="navbar">
       <div className="container">
-        <a  className = "Resume" onClick={onResumeClick}>
+        <a className="Resume" onClick={onResumeClick}>
           My Resume
         </a>
       </div>
@@ -55,21 +53,23 @@ function Navbar() {
 
       <ul className="nav-links">
         <div className="name-box">
-         
           <li className="Name">
             A <span className="period">.</span>
           </li>
-                
         </div>
-        <Link to="About" smooth={true} duration={500}>
+        <ScrollLink to="About" smooth={true} duration={500}>
           <li>Skills</li>
-        </Link>
-        <Link to="Projects" smooth={true} duration={500}>
+        </ScrollLink>
+        <ScrollLink to="Projects" smooth={true} duration={500}>
           <li>Projects</li>
-        </Link>
-        <Link to="Contact" smooth={true} duration={500}>
+        </ScrollLink>
+        <ScrollLink to="Contact" smooth={true} duration={500}>
           <li>Contact</li>
-        </Link>
+        </ScrollLink>
+        {/* Use RouterLink for the Blogs route */}
+        <RouterLink to="/blogs">
+            <li>Blogs</li>
+          </RouterLink>
       </ul>
       <div className="Introduction">
         <h1>Hey, I'm Akshay</h1>
@@ -81,9 +81,9 @@ function Navbar() {
           skills through problem-solving and creating various projects! Scroll
           down to learn more about me.
         </p>
-        <Link to="Contact"  smooth={true} duration={900}>
+        <ScrollLink to="Contact" smooth={true} duration={900}>
           <button>Contact Me</button>
-        </Link>
+        </ScrollLink>
       </div>
     </nav>
   );
