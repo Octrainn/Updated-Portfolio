@@ -9,6 +9,7 @@ import discord from './Images/DiscordBot.png';
 import picture from './Images/Better.jpg';
 import SpaceSim from './Images/SpaceSim.png';
 import Ruby from './Images/Ruby.png'
+import RateMyCourses from "./Images/RateMyCourses.png"
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,8 +49,21 @@ function Projects() {
   imageSrc={SpaceSim}
   githubLink="https://www.roblox.com/games/15775582193/UPD-4-Space-Simulator-X"
   technologies="LUA, Roblox Game Engine, ProfileService API, TopBarPlus API"
+  
   description="Developed a fully functional game in Roblox, utilizing multiple tech stacks and APIs. Game is publicly available, click the icon above."
 />
+
+<ProjectCard
+  className="project-card"
+  title="RateMyCourses"
+  imageSrc={RateMyCourses}
+  githubLink="https://github.com/EliyaFarhat/RateMyClasses"
+  technologies="MongoDB, Docker, Postman, React, Node, Express"
+  
+  description="Developed a full-stack MERN web app for course reviews at Toronto Metropolitan University using
+MongoDB to store users and courses. "
+/>
+
 
 <ProjectCard
   className="project-card"
