@@ -11,7 +11,10 @@ const Blogs = () => {
 
   const blogPosts = [
     { id: "beginnings", title: "To Beginnings, Self Improvement & End of a Term", content: "December 13th, 2024" },
+    { id: "Dilemma", title: "LeetCode vs Projects", content: "January 8th, 2025" },
+
   ];
+  //ui front page
 
   const handleBlogClick = (id) => {
     navigate(`/blogs/${id}`); // a dynamic blog page

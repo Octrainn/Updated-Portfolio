@@ -9,6 +9,7 @@ const BlogPages = () => {
   const backtoBlog = () => {
     navigate("/blogs");
   };
+//content of the pages//
 
   const HighlightWords = () => {
 
@@ -27,6 +28,24 @@ const BlogPages = () => {
         {
           heading: "Review of this Semester",
           content: "Honestly, this semester was one of my better ones I've had, this implies both GPA and pure enjoyability. The courses I took this term were CPS633(Comp Security), CPS510(Databases), RTA928 and CPCS181.  The one course that stood out the most was CPS510,  this course is honestly one of Ryerson's best CPS courses I have ever taken. I believe the information that you derive from this course is  extremely useful in the practical sense. Not to say that other courses that I was taught were not practical, I just personally did not see the impact they had on my  knowledge and programming skills.  We were taught SQL, a popular programming language used to create tables  about entities that exist within a relationship inside of a database. The database we used was oracle, honestl I would've prefered a more mainstream type of database such as MySQL, but oracle was not the worst choice so I was fine with it. We were given lots of labs from this course, which meant we were required to keep up with  the course content in order to complete the labs and present to the TA.  I hated the fact that it was 8 am every Monday, but we move regardless. "
+        },
+        
+      ],
+    },
+
+    {
+      id: "Dilemma",
+      title: "LeetCode vs Projects",
+      Date: "01/08/2025",
+
+      sections: [
+        {
+            heading: "What to Prioritize",
+             content: "I think that priortizing one over the other depends on two simple things.If u are not getting any interviews, grind projects to stack up resume, otherwise practise leetcode. However I really dislike the whole concept of leetcode, as its mainly an interview skill and not something you would require to actually do the job. I do see the potential benefits of doing leetcode, as it improves your short term memory indirectly,  increases  problem solving skills through pattern recognition, I am not disregarding this but I just think it's extremely ridiculous that you need to maintain a seperate skill that isnt related with the job that you're required to do.   "
+        },
+        {
+          heading: "Small Rant",
+          content: "Anyways back to grinding :( "
         },
         
       ],

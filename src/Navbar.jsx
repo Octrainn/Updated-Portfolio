@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect/dist/core";
 import "./CSS Files/Navbar.css";
-import Pdf from "./Images/Akshay_Vakil_Computer_Science_Resume (1).pdf";
+import Pdf from "./Images/Akshay_Vakil_Computer_Science_Resume.pdf";
 
 function Navbar() {
   const typewriterRef = useRef(null);
