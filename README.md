@@ -1,5 +1,5 @@
 #New portfolio showcasing all my projects and skills created with React and additional JS libraries!
-https://akshayporfolionew.netlify.app/
+[https://akshayporfolionew.netlify.app/](https://akshayport.netlify.app/)
 
 Dynamic and responsive design, soon incorporating different APIs, and animations
 
