@@ -7,6 +7,8 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Blogs from './blogs';
 import BlogPost from './blogpages';
+import Particles from "./Particles"
+import "./CSS Files/Particles.css"
 
 function AppContent() {
   const location = useLocation();
@@ -25,6 +27,7 @@ function AppContent() {
               <About />
               <Projects />
               <Contact />
+              <Particles id = "particles" />
             </div>
           }
         />
