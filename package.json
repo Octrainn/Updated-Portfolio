@@ -15,6 +15,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tsparticles/all": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "dom": "^0.0.3",
     "react": "^18.2.0",
